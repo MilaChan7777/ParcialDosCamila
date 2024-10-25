@@ -1,0 +1,126 @@
+/* Estilo del cuerpo */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Arial Rounded MT Bold", sans-serif;
+  color: #333;
+  background: radial-gradient(circle, #ffe4e6 20%, #ffb3c1 100%);
+}
+
+/* Estilos de encabezados */
+h1, h2 {
+  text-align: center;
+  margin: 1rem 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff4d6d;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #ff6f91;
+}
+
+/* Contenedor principal de resultados */
+#results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out;
+  max-width: 600px;
+  width: 85%;
+}
+
+#app {
+  border-radius: 15px;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  animation: slideIn 1s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 85%;
+  max-width: 500px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Lista de jugadores y puntuaciones */
+#players-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+#players-list li {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  color: #333;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Botones */
+button {
+  padding: 0.7rem 1.5rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #ff4d6d;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #ff3c58;
+}
+
+/* Texto */
+p {
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
